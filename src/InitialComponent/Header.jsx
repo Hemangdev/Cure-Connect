@@ -28,6 +28,7 @@ const Header = () => {
           </nav>
 
           {/* Desktop Button */}
+          {/* Dekstop buttons */}
           <div className="hidden lg:inline-flex lg:w-2/5 lg:justify-end">
             <button className="bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base">
               Button
