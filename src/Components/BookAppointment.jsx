@@ -15,7 +15,7 @@ const BookAppointment = () => {
                     <Categories />
                 </div>
                 {/* Doctor Card Come Here */}
-                <div className='flex gap-2 flex-wrap'>
+                <div className='flex gap-3 flex-wrap mt-4'>
                     <DoctorCard/>
                 </div>
                 <div>
