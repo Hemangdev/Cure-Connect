@@ -45,6 +45,7 @@ const CarouselHome = () => {
             <section className="hero-banner">
 
                 <Swiper
+                 
                     slidesPerView={1}
                     spaceBetween={30}
                     speed={1200}
@@ -68,10 +69,6 @@ const CarouselHome = () => {
                             slidesPerView: 1
                         }
                     }}
-
-
-
-
                 >
                     {BannerImages.map((item) => {
                         return (
