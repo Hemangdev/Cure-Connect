@@ -4,9 +4,9 @@ import { FiMenu, FiX } from 'react-icons/fi'; // Import icons
 import { BiSolidOffer } from "react-icons/bi";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
+import { MdWork } from "react-icons/md";
+import { HiUserGroup } from "react-icons/hi2";
 import { IoLocation } from "react-icons/io5";
-import HealthcareServicesDropdown from '../Components/HealthcareServicesDropdown';
-import SearchBox from '../Components/SearchBox';
 
 const Header = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -22,20 +22,14 @@ const Header = () => {
             href="/"
             className="title-font font-medium text-gray-900 flex items-center"
           >
-            <span className="ml-3 text-xl">CureConnect</span>
+            <span className="ml-3 text-xl">Website Developers</span>
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex lg:w-[36%] flex-wrap items-center text-base md:ml-auto">
-            <a href="#" className="mr-5 text-[#21265f] ">Doctors</a>
-            <a href="#" className="mr-5 text-[#21265f] ">Patient Portal</a>
-            <a href="#" className="mr-5 text-[#21265f] ">Book Appointment</a>
-            <a href="#" className=" text-[#21265f]">Blog</a>
-          </nav>
 
           <div className=' hidden md:block'>
 
-            <SearchBox />
+
           </div>
 
 
@@ -43,10 +37,17 @@ const Header = () => {
           {/* Dekstop buttons */}
           <div className="hidden lg:inline-flex lg:w-[22%] lg:justify-end gap-3 items-center">
 
-            <HealthcareServicesDropdown />
-            <BiSolidOffer size={24} />
-            <CiShoppingCart size={24} />
-            <CiUser size={24} />
+            <div className='flex gap-2'>
+              <span>Our Work</span>
+              <MdWork size={24} />
+            </div>
+            <div className='flex gap-2'>
+              <span>Expert Team</span>
+              <HiUserGroup size={24} />
+            </div>
+
+           
+          
             {/* <button className="bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base">
               Button
               <svg
